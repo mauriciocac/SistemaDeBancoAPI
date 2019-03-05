@@ -7,12 +7,12 @@ var connection = function () {
             port: 3306,
             database: 'banco_mundial',
             user: 'root',
-            password: '34h6823dw'
+            password: '094569'
         }
     );
 }
 
 module.exports = function () {
-    console.log('Banco de Dados iniciado...');
+    console.log('Banco de Dados iniciado... ' + Date());
     return connection;
 }
