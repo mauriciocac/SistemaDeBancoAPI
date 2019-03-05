@@ -1,0 +1,24 @@
+Para subir o projeto em outra maquina primeiro é necessário instalar o framework do Node.js que auxiliará na construção das nossas aplicações Web:
+
+1. npm install express
+
+Feito isso, nós precisamos criar o nosso arquivo package.json, esse é o arquivo de ponto de partida dos nossos projetos Node:
+
+2. npm init -y
+
+Instalar o MySQL
+
+3. npm install mysql
+
+
+4. npm install express-validator
+
+
+5. npm install body-parser
+
+6. npm install consign
+
+
+Feito isso, instalar o nodemon auxiliará no momento do nosso desenvolvimento, com ele nós não precisamos dar stop e subir novamente a nossa APP:
+
+3. npm install -g nodemon
