@@ -4,16 +4,21 @@ module.exports.listar_clientes = function (app, req, res) {
     clienteDao.getListarClientes(function (err, result) {
         res.json(result);
     })
-
 }
 
 module.exports.pesquisar_cliente = function (app, req, res) {
     let conn = app.config.banco();
     var clienteDao = new app.app.dao.ClienteDAO(conn);
-    let obj = req.query; 
-    
+    let obj = req.query;
+
     clienteDao.getPesquisarCliente(obj, function (err, result) {
         res.json(result);
     })
+}
 
+module.exports.salvar_cliente = function (app, req, res) {
+    let conn = app.config.banco();
+    var obj = req.body;
+    var clienteDao = new app.app.dao.ClienteDAO(conn);
+    clienteDao.salvarCliente(obj); 
 }

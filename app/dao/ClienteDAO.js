@@ -9,6 +9,11 @@ ClienteDAO.prototype.getListarClientes = function (callback) {
 ClienteDAO.prototype.getPesquisarCliente = function (obj, callback) {
     this._conn.query('select * from cliente where id = ' + obj.id, callback);
 }
+
+ClienteDAO.prototype.salvarCliente = function (cliente, callback) {
+    this._conn.query('insert into cliente set ? ' , cliente, callback);
+}
+
 module.exports = function () {
     return ClienteDAO;
 }
