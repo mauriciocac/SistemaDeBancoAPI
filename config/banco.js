@@ -7,7 +7,7 @@ var connection = function () {
             port: 3306,
             database: 'banco_mundial',
             user: 'root',
-            password: 'sdsdf'
+            password: '094569'
         }
     );
 }
